@@ -141,9 +141,11 @@
                                     <div class="row">
                                         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                                             <ul>
+                                                {% for each_feature in single_car.features %}
                                                 <li>
-                                                    {{single_car.features}}
+                                                    {{ each_feature }}
                                                 </li>
+                                                {% endfor %}
                                             </ul>
                                         </div>
                                     </div>
@@ -167,53 +169,37 @@
                         <h3 class="sidebar-title">Refine Your Search</h3>
                         <ul>
                             <li>
-                                <span>Body Style:</span>Convertible
+                                <span>Body Style:</span>{{single_car.body_style}}
                             </li>
                             <li>
-                                <span>Engine:</span>3.4L Mid-Engine V6
+                                <span>Engine:</span>{{single_car.engine}}
                             </li>
                             <li>
-                                <span>Transmission:</span>6-speed Manual
+                                <span>Transmission:</span>{{single_car.transmission}}
                             </li>
                             <li>
-                                <span>Drivetrain:</span>Rear Wheel Drive
+                                <span>Interior:</span>{{single_car.interior}}
                             </li>
                             <li>
-                                <span>Exaterion:</span>Lime Gold Metallic
+                                <span>Miles:</span>{{single_car.miles | intcomma }} kms
                             </li>
                             <li>
-                                <span>Interior:</span>Agate Grey
+                                <span>Doors:</span>{{single_car.doors}}
                             </li>
                             <li>
-                                <span>Miles:</span>12
+                                <span>Passengers:</span>{{single_car.passengers}}
                             </li>
                             <li>
-                                <span>Doors:</span>2
+                                <span>Vin #:</span>{{single_car.vin_no}}
                             </li>
                             <li>
-                                <span>Passengers:</span>2
+                                <span>Fuel Mileage:</span>{{single_car.mileage }}
                             </li>
                             <li>
-                                <span>Vin #:</span>WP0AB2E81EK190171
+                                <span>Fuel Type:</span>{{single_car.fuel_type}}
                             </li>
                             <li>
-                                <span>Fuel Mileage:</span>20 City / 28 Hwy
-                            </li>
-                            <li>
-                                <span>Fuel Type:</span>Gasoline
-                            </li>
-                            <li>
-                                <span>Vin #:</span>WP0AB2E81EK190171
-                            </li>
-
-                            <li>
-                                <span>Condition:</span>Brand New
-                            </li>
-                            <li>
-                                <span>Owners:</span>N/A
-                            </li>
-                            <li>
-                                <span>Waeeanty:</span>3 Years Limited
+                                <span>Owners:</span>{{single_car.no_of_owners}}
                             </li>
                         </ul>
                     </div>

@@ -139,8 +139,11 @@
                                 <div class="tag-2">Featured</div>
                                 <div class="price-box">
                                     <br>
-                                    <span>${{car.price}}</span>
+                                    <span>${{car.price | intcomma }}</span>
                                 </div>
+
+
+
                                 <img class="d-block w-100" src="{{car.car_photo.url}}" alt="car" style="min-height: 262px; max-height: 262px">
                             </a>
                             <div class="carbox-overlap-wrapper">
@@ -297,7 +300,7 @@
                             <p class="cartype">{{car.body_style}}</p>
                         </div>
                         <div class="pull-right">
-                            <p class="price">${{car.price}}</p>
+                            <p class="price">${{car.price | intcomma }}</p>
                         </div>
                     </div>
                 </div>
