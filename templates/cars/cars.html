@@ -494,7 +494,7 @@
                             <ul class="pagination">
                                 {% if cars.has_previous %}
                                     <li class="page-item">
-                                        <a class="page-link" href="?page={{cars.previous_page_number}}"><i class="fa fa-angle-left"></i></a>
+                                        <a class="page-link" href="cars/?page={{cars.previous_page_number}}"><i class="fa fa-angle-left"></i></a>
                                     </li>
                                 {% else %}
                                     <li class="page-item disabled">
@@ -506,13 +506,13 @@
                                     {% if cars.number == pg %}
                                         <li class="page-item"><a class="page-link active" href="#">{{pg}}</a></li>
                                     {% else %}
-                                        <li class="page-item"><a class="page-link" href="?page={{pg}}">{{pg}}</a></li>
+                                        <li class="page-item"><a class="page-link" href="cars/?page={{pg}}">{{pg}}</a></li>
                                     {% endif %}
                                 {% endfor %}
 
                                 {% if cars.has_next %}
                                 <li class="page-item">
-                                    <a class="page-link" href="?page={{cars.next_page_number}}"><i class="fa fa-angle-right"></i></a>
+                                    <a class="page-link" href="cars/?page={{cars.next_page_number}}"><i class="fa fa-angle-right"></i></a>
                                 </li>
                                 {% else %}
                                 <li class="page-item disabled">
