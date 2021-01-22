@@ -12,7 +12,7 @@ def home(request):
         'teams': teams,
         'featured_cars': featured_cars,
         'all_cars': all_cars,
-        'search_fields':search_fields
+        'search_fields': search_fields
     }
     return render(request, 'pages/home.html', data)
 
