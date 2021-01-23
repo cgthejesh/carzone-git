@@ -27,7 +27,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'kn31_on&giyf0*lyju&%blu+6dbi@_1jmy$@s@+9uf*-0qfn^9'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'murmuring-river-36438.herokuapp.com', 'https://murmuring-river-36438.herokuapp.com/', 'https://murmuring-river-36438.herokuapp.com']
 
